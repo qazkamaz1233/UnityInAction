@@ -1301,6 +1301,7 @@ GameObject:
   - component: {fileID: 677842815}
   - component: {fileID: 677842814}
   - component: {fileID: 677842818}
+  - component: {fileID: 677842819}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1413,6 +1414,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589b2d2f0ab95194aa5cc39344242a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ReactiveTarget
+--- !u!114 &677842819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677842813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cac5a89737066447a23f06c1dca9362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WanderingAI
+  speed: 3
+  obstacleRange: 5
 --- !u!1 &775975644
 GameObject:
   m_ObjectHideFlags: 0

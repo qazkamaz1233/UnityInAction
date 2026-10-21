@@ -1,0 +1,21 @@
+using UnityEngine;
+
+public class WanderingAI : MonoBehaviour
+{
+    public float speed = 3.0f;
+    public float obstacleRange = 5.0f;
+
+    void Update()
+    {
+        transform.Translate(0, 0, speed * Time.deltaTime);
+        Ray ray = new(transform.position, transform.forward);
+        if (Physics.SphereCast(ray, 0.75f, out RaycastHit hit))
+        {
+            if (hit.distance < obstacleRange)
+            {
+                float angle = Random.Range(-110, 110);
+                transform.Rotate(0, angle, 0);
+            }
+        }
+    }
+}
