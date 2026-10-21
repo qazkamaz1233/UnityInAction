@@ -24,7 +24,7 @@ public class FPSInput : MonoBehaviour
         float rigthDeltaX = Keyboard.current.dKey.ReadValue() * speed;
         float leftDeltaX = Keyboard.current.aKey.ReadValue() * speed;
 
-        Vector3 movement = new Vector3(rigthDeltaX - leftDeltaX, 0, forwardDeltaZ - backDeltaZ);
+        Vector3 movement = new(rigthDeltaX - leftDeltaX, 0, forwardDeltaZ - backDeltaZ);
         movement = Vector3.ClampMagnitude(movement, speed);
         movement.y = gravity;
 
