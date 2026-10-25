@@ -3193,6 +3193,7 @@ GameObject:
   - component: {fileID: 2078276245}
   - component: {fileID: 2078276246}
   - component: {fileID: 2078276247}
+  - component: {fileID: 2078276248}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3329,6 +3330,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FPSInput
   speed: 6
   gravity: -9.8
+--- !u!114 &2078276248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078276240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93dc15da4f657c4689ecd336b4a8d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCharacter
 --- !u!1 &2096915885
 GameObject:
   m_ObjectHideFlags: 0
